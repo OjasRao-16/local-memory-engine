@@ -1,0 +1,558 @@
+[
+  {
+    "threshold": 0.2,
+    "alpha": 0.7,
+    "top_k": 5,
+    "cases": 38,
+    "accuracy": 0.842,
+    "recall@5": 0.857,
+    "unknown_rejection": 0.714,
+    "per_category": {
+      "contradiction": "4/4",
+      "direct_fact": "8/9",
+      "multi_relevant": "2/4",
+      "preference": "5/5",
+      "project": "3/4",
+      "unknown": "5/7",
+      "update": "5/5"
+    },
+    "latency_ms_p50": 24.0,
+    "latency_ms_p95": 31.43,
+    "failures": [
+      [
+        "proj-nextjs",
+        "What is the user building?",
+        []
+      ],
+      [
+        "multi-profile",
+        "What is the user's tech stack?",
+        [
+          [
+            "User uses Arch Linux.",
+            0.3046
+          ]
+        ]
+      ],
+      [
+        "multi-mixed",
+        "Tell me about the user's background",
+        [
+          [
+            "User works at Google.",
+            0.2689
+          ],
+          [
+            "User lives in Pune.",
+            0.2066
+          ]
+        ]
+      ],
+      [
+        "multi-sentence",
+        "What is the user building?",
+        [
+          [
+            "User prefers Python.",
+            0.2341
+          ]
+        ]
+      ],
+      [
+        "unk-birthday",
+        "When is the user's birthday?",
+        [
+          [
+            "User lives in Pune.",
+            0.2116
+          ]
+        ]
+      ],
+      [
+        "unk-travel",
+        "Which country did the user last travel to?",
+        [
+          [
+            "User lives in Pune.",
+            0.2453
+          ],
+          [
+            "User works at Google.",
+            0.2279
+          ]
+        ]
+      ]
+    ]
+  },
+  {
+    "threshold": 0.25,
+    "alpha": 0.7,
+    "top_k": 5,
+    "cases": 38,
+    "accuracy": 0.842,
+    "recall@5": 0.771,
+    "unknown_rejection": 1.0,
+    "per_category": {
+      "contradiction": "4/4",
+      "direct_fact": "8/9",
+      "multi_relevant": "1/4",
+      "preference": "5/5",
+      "project": "3/4",
+      "unknown": "7/7",
+      "update": "4/5"
+    },
+    "latency_ms_p50": 18.67,
+    "latency_ms_p95": 27.34,
+    "failures": [
+      [
+        "proj-nextjs",
+        "What is the user building?",
+        []
+      ],
+      [
+        "upd-project",
+        "What is the user building?",
+        []
+      ],
+      [
+        "multi-profile",
+        "What is the user's tech stack?",
+        [
+          [
+            "User uses Arch Linux.",
+            0.3046
+          ]
+        ]
+      ],
+      [
+        "multi-project",
+        "Tell me about the user's project",
+        [
+          [
+            "Project deadline is October 15.",
+            0.3999
+          ],
+          [
+            "User's goal is to launch the app.",
+            0.2941
+          ]
+        ]
+      ],
+      [
+        "multi-mixed",
+        "Tell me about the user's background",
+        [
+          [
+            "User works at Google.",
+            0.2689
+          ]
+        ]
+      ],
+      [
+        "multi-sentence",
+        "What is the user building?",
+        []
+      ]
+    ]
+  },
+  {
+    "threshold": 0.3,
+    "alpha": 0.7,
+    "top_k": 5,
+    "cases": 38,
+    "accuracy": 0.763,
+    "recall@5": 0.686,
+    "unknown_rejection": 1.0,
+    "per_category": {
+      "contradiction": "3/4",
+      "direct_fact": "8/9",
+      "multi_relevant": "1/4",
+      "preference": "3/5",
+      "project": "3/4",
+      "unknown": "7/7",
+      "update": "4/5"
+    },
+    "latency_ms_p50": 18.5,
+    "latency_ms_p95": 27.56,
+    "failures": [
+      [
+        "pref-lang",
+        "Which programming language does the user like?",
+        []
+      ],
+      [
+        "pref-hobby",
+        "What are the user's hobbies?",
+        []
+      ],
+      [
+        "proj-nextjs",
+        "What is the user building?",
+        []
+      ],
+      [
+        "upd-project",
+        "What is the user building?",
+        []
+      ],
+      [
+        "contra-lang",
+        "Which programming language does the user use?",
+        []
+      ],
+      [
+        "multi-profile",
+        "What is the user's tech stack?",
+        [
+          [
+            "User uses Arch Linux.",
+            0.3046
+          ]
+        ]
+      ],
+      [
+        "multi-project",
+        "Tell me about the user's project",
+        [
+          [
+            "Project deadline is October 15.",
+            0.3999
+          ]
+        ]
+      ],
+      [
+        "multi-mixed",
+        "Tell me about the user's background",
+        []
+      ],
+      [
+        "multi-sentence",
+        "What is the user building?",
+        []
+      ]
+    ]
+  },
+  {
+    "threshold": 0.35,
+    "alpha": 0.7,
+    "top_k": 5,
+    "cases": 38,
+    "accuracy": 0.763,
+    "recall@5": 0.686,
+    "unknown_rejection": 1.0,
+    "per_category": {
+      "contradiction": "3/4",
+      "direct_fact": "8/9",
+      "multi_relevant": "1/4",
+      "preference": "3/5",
+      "project": "3/4",
+      "unknown": "7/7",
+      "update": "4/5"
+    },
+    "latency_ms_p50": 24.79,
+    "latency_ms_p95": 30.33,
+    "failures": [
+      [
+        "pref-lang",
+        "Which programming language does the user like?",
+        []
+      ],
+      [
+        "pref-hobby",
+        "What are the user's hobbies?",
+        []
+      ],
+      [
+        "proj-nextjs",
+        "What is the user building?",
+        []
+      ],
+      [
+        "upd-project",
+        "What is the user building?",
+        []
+      ],
+      [
+        "contra-lang",
+        "Which programming language does the user use?",
+        []
+      ],
+      [
+        "multi-profile",
+        "What is the user's tech stack?",
+        []
+      ],
+      [
+        "multi-project",
+        "Tell me about the user's project",
+        [
+          [
+            "Project deadline is October 15.",
+            0.3999
+          ]
+        ]
+      ],
+      [
+        "multi-mixed",
+        "Tell me about the user's background",
+        []
+      ],
+      [
+        "multi-sentence",
+        "What is the user building?",
+        []
+      ]
+    ]
+  },
+  {
+    "threshold": 0.4,
+    "alpha": 0.7,
+    "top_k": 5,
+    "cases": 38,
+    "accuracy": 0.684,
+    "recall@5": 0.571,
+    "unknown_rejection": 1.0,
+    "per_category": {
+      "contradiction": "3/4",
+      "direct_fact": "7/9",
+      "multi_relevant": "1/4",
+      "preference": "3/5",
+      "project": "2/4",
+      "unknown": "7/7",
+      "update": "3/5"
+    },
+    "latency_ms_p50": 18.66,
+    "latency_ms_p95": 27.37,
+    "failures": [
+      [
+        "fact-city",
+        "Where does the user live?",
+        []
+      ],
+      [
+        "pref-lang",
+        "Which programming language does the user like?",
+        []
+      ],
+      [
+        "pref-hobby",
+        "What are the user's hobbies?",
+        []
+      ],
+      [
+        "proj-nextjs",
+        "What is the user building?",
+        []
+      ],
+      [
+        "proj-flask",
+        "What project is the user working on?",
+        []
+      ],
+      [
+        "upd-city",
+        "Where does the user live?",
+        []
+      ],
+      [
+        "upd-project",
+        "What is the user building?",
+        []
+      ],
+      [
+        "contra-lang",
+        "Which programming language does the user use?",
+        []
+      ],
+      [
+        "multi-profile",
+        "What is the user's tech stack?",
+        []
+      ],
+      [
+        "multi-project",
+        "Tell me about the user's project",
+        []
+      ],
+      [
+        "multi-mixed",
+        "Tell me about the user's background",
+        []
+      ],
+      [
+        "multi-sentence",
+        "What is the user building?",
+        []
+      ]
+    ]
+  },
+  {
+    "threshold": 0.45,
+    "alpha": 0.7,
+    "top_k": 5,
+    "cases": 38,
+    "accuracy": 0.684,
+    "recall@5": 0.571,
+    "unknown_rejection": 1.0,
+    "per_category": {
+      "contradiction": "3/4",
+      "direct_fact": "7/9",
+      "multi_relevant": "1/4",
+      "preference": "3/5",
+      "project": "2/4",
+      "unknown": "7/7",
+      "update": "3/5"
+    },
+    "latency_ms_p50": 18.54,
+    "latency_ms_p95": 22.09,
+    "failures": [
+      [
+        "fact-city",
+        "Where does the user live?",
+        []
+      ],
+      [
+        "pref-lang",
+        "Which programming language does the user like?",
+        []
+      ],
+      [
+        "pref-hobby",
+        "What are the user's hobbies?",
+        []
+      ],
+      [
+        "proj-nextjs",
+        "What is the user building?",
+        []
+      ],
+      [
+        "proj-flask",
+        "What project is the user working on?",
+        []
+      ],
+      [
+        "upd-city",
+        "Where does the user live?",
+        []
+      ],
+      [
+        "upd-project",
+        "What is the user building?",
+        []
+      ],
+      [
+        "contra-lang",
+        "Which programming language does the user use?",
+        []
+      ],
+      [
+        "multi-profile",
+        "What is the user's tech stack?",
+        []
+      ],
+      [
+        "multi-project",
+        "Tell me about the user's project",
+        []
+      ],
+      [
+        "multi-mixed",
+        "Tell me about the user's background",
+        []
+      ],
+      [
+        "multi-sentence",
+        "What is the user building?",
+        []
+      ]
+    ]
+  },
+  {
+    "threshold": 0.5,
+    "alpha": 0.7,
+    "top_k": 5,
+    "cases": 38,
+    "accuracy": 0.658,
+    "recall@5": 0.514,
+    "unknown_rejection": 1.0,
+    "per_category": {
+      "contradiction": "3/4",
+      "direct_fact": "7/9",
+      "multi_relevant": "0/4",
+      "preference": "3/5",
+      "project": "2/4",
+      "unknown": "7/7",
+      "update": "3/5"
+    },
+    "latency_ms_p50": 24.49,
+    "latency_ms_p95": 31.89,
+    "failures": [
+      [
+        "fact-city",
+        "Where does the user live?",
+        []
+      ],
+      [
+        "pref-lang",
+        "Which programming language does the user like?",
+        []
+      ],
+      [
+        "pref-hobby",
+        "What are the user's hobbies?",
+        []
+      ],
+      [
+        "proj-nextjs",
+        "What is the user building?",
+        []
+      ],
+      [
+        "proj-flask",
+        "What project is the user working on?",
+        []
+      ],
+      [
+        "upd-city",
+        "Where does the user live?",
+        []
+      ],
+      [
+        "upd-project",
+        "What is the user building?",
+        []
+      ],
+      [
+        "contra-lang",
+        "Which programming language does the user use?",
+        []
+      ],
+      [
+        "multi-profile",
+        "What is the user's tech stack?",
+        []
+      ],
+      [
+        "multi-project",
+        "Tell me about the user's project",
+        []
+      ],
+      [
+        "multi-dev",
+        "What development tools does the user use?",
+        []
+      ],
+      [
+        "multi-mixed",
+        "Tell me about the user's background",
+        []
+      ],
+      [
+        "multi-sentence",
+        "What is the user building?",
+        []
+      ]
+    ]
+  }
+]
