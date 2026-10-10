@@ -185,3 +185,17 @@ For comparison, the `hash` embedder is a lexical/hash baseline, **not semantic s
 ## LLM assistance disclosure
 
 This project was developed with AI assistance during planning, implementation, testing, and documentation. Review this disclosure and edit it to accurately describe the tools used and the parts you personally wrote, tested, and understand. Do not claim authorship of code you did not write, and be prepared to explain the design, implementation, evaluation, and limitations during the interview.
+
+
+### What would break first with 10 million memories?
+
+The first bottleneck would likely be retrieval latency and memory usage as the number of memories grows. Comparing a query embedding against every stored memory becomes expensive, and loading all embeddings into memory may exceed the available RAM.
+
+To address this, I would:
+- Add SQLite indexes for frequently queried fields and use pagination.
+- Replace full embedding scans with an approximate nearest-neighbour (ANN) vector index, such as FAISS.
+- Keep BM25 keyword search indexed and combine its results with semantic search.
+- Generate embeddings in batches and cache frequently used results.
+- Benchmark retrieval latency and memory usage at increasing dataset sizes before choosing the final storage and indexing setup.
+
+The current implementation is designed for small-scale use; these changes would need to be implemented and benchmarked before claiming support for 10 million memories.
